@@ -1,7 +1,7 @@
-# SVG Graphic Generator
+# Note Taker
 
 ## Description
-This SVG Graphic Generator helps users create a high quality SVG file by asking a series of questions to populate the text, shape, and colors. It's easy to use and fun!
+This note taker allows user the save and retrieve their most important notes! The data is stored in a database so the list will stick around. The UI allows users to delete old notes.
 
 ## Table of Contents
 - [Usage](#usage)
@@ -10,25 +10,21 @@ This SVG Graphic Generator helps users create a high quality SVG file by asking 
 - [Access](#access)
 
 ## Usage
-- Run the application by using the following command:
-```bash
-node index.js
-```
-- Answer the questions about your graphic.
+- Click "Get Started" at the landing page
+- Use the + to add a new note and use the save icon to save after writing
+- Reopen old notes by clicking note in left pane
+- Delete note by clicking the trash can icon
 
-![user terminal experience](./images/terminal.png)
-- Find the graphic built to your needs
+![user experience](./images/notes.png)
 
-![sample graphic](./images/sample_image.png)
 
 ## Credits
-This was built from learning the concepts from class week 10 on OOP.
+The backend was built by me and the front-end came from [starter code](https://github.com/coding-boot-camp/miniature-eureka).
 
 ## Features
-- Try out different shapes and colors!
-- Use color names or hexadecimal for both letters and shape colors!
+- Add, Store, Delete your favorite notes
+- No frill note taker
+- Use and enjoy!
 
 ## Access
-Click to view repository: [SVG Graphic Generator](https://github.com/johnpow/graphic-designer).
-
-Click to view video walkthrough: [Video Walkthrough](https://drive.google.com/file/d/10evWrao8BwyTMNoaQYmkb-h_ByzMNewk/view).
+Click to view repository: [Note Taker](https://github.com/johnpow/note-taker).

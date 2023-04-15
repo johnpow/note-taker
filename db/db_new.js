@@ -3,8 +3,8 @@ const id = require('../helpers/id');
 const db =
 [
     {
-        "title":"Test Title",
-        "text":"Test text",
+        "title":"My first note",
+        "text":"This is an excellent start to your note taking future!",
         "id": id(),
     }
 ]
