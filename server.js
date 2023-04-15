@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
-const db = require('./db/db.json')
+let db = require('./db/db_new')
+const id = require('./helpers/id');
 const PORT = process.env.PORT || 3001;
 
 const app = express();
@@ -27,12 +28,18 @@ app.get('/api/notes', (req,res) => {
 })
 
 app.post('/api/notes', (req,res) => {
+    req.body.id = id();
     db.push(req.body)
     res.json(db);
 })
 
 app.delete('/api/notes/:id', (req,res) => {
-    console.log(req.params)
+    // console.log(req.params.id)
+    const idnum = req.params.id;
+    db = db.filter(object => {
+        return object.id !== idnum;
+    });
+    // console.log(db)
     res.json(db);
 })
 
