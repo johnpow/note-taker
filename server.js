@@ -34,12 +34,9 @@ app.post('/api/notes', (req,res) => {
 })
 
 app.delete('/api/notes/:id', (req,res) => {
-    // console.log(req.params.id)
-    const idnum = req.params.id;
     db = db.filter(object => {
-        return object.id !== idnum;
+        return object.id !== req.params.id;
     });
-    // console.log(db)
     res.json(db);
 })
 
