@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-let db = require('./db/db_new')
+let db = require('./db/db')
 const id = require('./helpers/id');
 const PORT = process.env.PORT || 3001;
 
@@ -34,7 +34,7 @@ app.post('/api/notes', (req,res) => {
 })
 
 app.delete('/api/notes/:id', (req,res) => {
-    db = db.filter(object => {
+     db = db.filter(object => {
         return object.id !== req.params.id;
     });
     res.json(db);
