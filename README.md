@@ -28,4 +28,5 @@ The backend was built by me and the front-end came from [starter code](https://g
 
 ## Access
 Click to view repository: [Note Taker](https://github.com/johnpow/note-taker).
-Deployed Site: [Deployed Site](https://vast-inlet-18412.herokuapp.com/).
+
+Deployed Site: [Note Taker](https://vast-inlet-18412.herokuapp.com/).
